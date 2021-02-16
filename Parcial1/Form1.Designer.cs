@@ -65,6 +65,20 @@
             this.chcCartaLib = new System.Windows.Forms.CheckBox();
             this.chcCartaPre = new System.Windows.Forms.CheckBox();
             this.chcSeguro = new System.Windows.Forms.CheckBox();
+            this.grpDatosEmpresa = new System.Windows.Forms.GroupBox();
+            this.lstEmpresas = new System.Windows.Forms.ListBox();
+            this.lblContacto = new System.Windows.Forms.Label();
+            this.lblAsesor = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.lblTelMovAse = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.lblFechaInicio = new System.Windows.Forms.Label();
+            this.lblFechaTermino = new System.Windows.Forms.Label();
+            this.dtpFechaInicio = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaTermino = new System.Windows.Forms.DateTimePicker();
             this.grpDatosPersonales.SuspendLayout();
             this.grpGenero.SuspendLayout();
             this.grpTipo.SuspendLayout();
@@ -72,6 +86,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.grpDatosCarrera.SuspendLayout();
             this.grpDocumentos.SuspendLayout();
+            this.grpDatosEmpresa.SuspendLayout();
             this.SuspendLayout();
             // 
             // grpDatosPersonales
@@ -129,7 +144,7 @@
             this.lblTelFijo.Name = "lblTelFijo";
             this.lblTelFijo.Size = new System.Drawing.Size(94, 17);
             this.lblTelFijo.TabIndex = 3;
-            this.lblTelFijo.Text = "Télefono Fijo:";
+            this.lblTelFijo.Text = "Teléfono Fijo:";
             // 
             // lblTelMovil
             // 
@@ -138,7 +153,7 @@
             this.lblTelMovil.Name = "lblTelMovil";
             this.lblTelMovil.Size = new System.Drawing.Size(104, 17);
             this.lblTelMovil.TabIndex = 4;
-            this.lblTelMovil.Text = "Télefono Móvil:";
+            this.lblTelMovil.Text = "Teléfono Móvil:";
             // 
             // txtNombre
             // 
@@ -374,7 +389,7 @@
             // chcSolicitud
             // 
             this.chcSolicitud.AutoSize = true;
-            this.chcSolicitud.Location = new System.Drawing.Point(19, 35);
+            this.chcSolicitud.Location = new System.Drawing.Point(17, 35);
             this.chcSolicitud.Name = "chcSolicitud";
             this.chcSolicitud.Size = new System.Drawing.Size(235, 21);
             this.chcSolicitud.TabIndex = 0;
@@ -461,12 +476,152 @@
             this.chcSeguro.Text = "Seguro Gastos Médicos";
             this.chcSeguro.UseVisualStyleBackColor = true;
             // 
+            // grpDatosEmpresa
+            // 
+            this.grpDatosEmpresa.Controls.Add(this.dtpFechaTermino);
+            this.grpDatosEmpresa.Controls.Add(this.dtpFechaInicio);
+            this.grpDatosEmpresa.Controls.Add(this.lblFechaTermino);
+            this.grpDatosEmpresa.Controls.Add(this.lblFechaInicio);
+            this.grpDatosEmpresa.Controls.Add(this.textBox4);
+            this.grpDatosEmpresa.Controls.Add(this.textBox3);
+            this.grpDatosEmpresa.Controls.Add(this.textBox2);
+            this.grpDatosEmpresa.Controls.Add(this.textBox1);
+            this.grpDatosEmpresa.Controls.Add(this.lblTelMovAse);
+            this.grpDatosEmpresa.Controls.Add(this.lblEmail);
+            this.grpDatosEmpresa.Controls.Add(this.lblAsesor);
+            this.grpDatosEmpresa.Controls.Add(this.lblContacto);
+            this.grpDatosEmpresa.Controls.Add(this.lstEmpresas);
+            this.grpDatosEmpresa.Location = new System.Drawing.Point(9, 518);
+            this.grpDatosEmpresa.Name = "grpDatosEmpresa";
+            this.grpDatosEmpresa.Size = new System.Drawing.Size(714, 223);
+            this.grpDatosEmpresa.TabIndex = 6;
+            this.grpDatosEmpresa.TabStop = false;
+            this.grpDatosEmpresa.Text = "Datos Empresa";
+            // 
+            // lstEmpresas
+            // 
+            this.lstEmpresas.FormattingEnabled = true;
+            this.lstEmpresas.ItemHeight = 16;
+            this.lstEmpresas.Items.AddRange(new object[] {
+            "T-System",
+            "VW",
+            "BMW",
+            "Sysne",
+            "GM",
+            "Google",
+            "SDR",
+            "MEXAbat",
+            "AWS",
+            "Benteler",
+            "Safrán"});
+            this.lstEmpresas.Location = new System.Drawing.Point(17, 32);
+            this.lstEmpresas.Name = "lstEmpresas";
+            this.lstEmpresas.Size = new System.Drawing.Size(136, 164);
+            this.lstEmpresas.TabIndex = 0;
+            // 
+            // lblContacto
+            // 
+            this.lblContacto.AutoSize = true;
+            this.lblContacto.Location = new System.Drawing.Point(270, 32);
+            this.lblContacto.Name = "lblContacto";
+            this.lblContacto.Size = new System.Drawing.Size(68, 17);
+            this.lblContacto.TabIndex = 1;
+            this.lblContacto.Text = "Contacto:";
+            // 
+            // lblAsesor
+            // 
+            this.lblAsesor.AutoSize = true;
+            this.lblAsesor.Location = new System.Drawing.Point(270, 65);
+            this.lblAsesor.Name = "lblAsesor";
+            this.lblAsesor.Size = new System.Drawing.Size(56, 17);
+            this.lblAsesor.TabIndex = 2;
+            this.lblAsesor.Text = "Asesor:";
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Location = new System.Drawing.Point(270, 91);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(46, 17);
+            this.lblEmail.TabIndex = 3;
+            this.lblEmail.Text = "Email:";
+            // 
+            // lblTelMovAse
+            // 
+            this.lblTelMovAse.AutoSize = true;
+            this.lblTelMovAse.Location = new System.Drawing.Point(270, 123);
+            this.lblTelMovAse.Name = "lblTelMovAse";
+            this.lblTelMovAse.Size = new System.Drawing.Size(152, 17);
+            this.lblTelMovAse.TabIndex = 4;
+            this.lblTelMovAse.Text = "Teléfono Móvil Asesor:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(376, 32);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(309, 22);
+            this.textBox1.TabIndex = 5;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(376, 60);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(309, 22);
+            this.textBox2.TabIndex = 6;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(376, 91);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(309, 22);
+            this.textBox3.TabIndex = 7;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(432, 123);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(253, 22);
+            this.textBox4.TabIndex = 8;
+            // 
+            // lblFechaInicio
+            // 
+            this.lblFechaInicio.AutoSize = true;
+            this.lblFechaInicio.Location = new System.Drawing.Point(315, 169);
+            this.lblFechaInicio.Name = "lblFechaInicio";
+            this.lblFechaInicio.Size = new System.Drawing.Size(87, 17);
+            this.lblFechaInicio.TabIndex = 9;
+            this.lblFechaInicio.Text = "Fecha Inicio:";
+            // 
+            // lblFechaTermino
+            // 
+            this.lblFechaTermino.AutoSize = true;
+            this.lblFechaTermino.Location = new System.Drawing.Point(315, 197);
+            this.lblFechaTermino.Name = "lblFechaTermino";
+            this.lblFechaTermino.Size = new System.Drawing.Size(107, 17);
+            this.lblFechaTermino.TabIndex = 10;
+            this.lblFechaTermino.Text = "Fecha Termino:";
+            // 
+            // dtpFechaInicio
+            // 
+            this.dtpFechaInicio.Location = new System.Drawing.Point(432, 164);
+            this.dtpFechaInicio.Name = "dtpFechaInicio";
+            this.dtpFechaInicio.Size = new System.Drawing.Size(252, 22);
+            this.dtpFechaInicio.TabIndex = 11;
+            // 
+            // dtpFechaTermino
+            // 
+            this.dtpFechaTermino.Location = new System.Drawing.Point(433, 192);
+            this.dtpFechaTermino.Name = "dtpFechaTermino";
+            this.dtpFechaTermino.Size = new System.Drawing.Size(252, 22);
+            this.dtpFechaTermino.TabIndex = 12;
+            // 
             // frmAsignacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Thistle;
-            this.ClientSize = new System.Drawing.Size(748, 688);
+            this.ClientSize = new System.Drawing.Size(748, 753);
+            this.Controls.Add(this.grpDatosEmpresa);
             this.Controls.Add(this.grpDocumentos);
             this.Controls.Add(this.grpDatosCarrera);
             this.Controls.Add(this.grpFoto);
@@ -487,6 +642,8 @@
             this.grpDatosCarrera.PerformLayout();
             this.grpDocumentos.ResumeLayout(false);
             this.grpDocumentos.PerformLayout();
+            this.grpDatosEmpresa.ResumeLayout(false);
+            this.grpDatosEmpresa.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -530,6 +687,20 @@
         private System.Windows.Forms.CheckBox chcCV;
         private System.Windows.Forms.CheckBox chcCartaCom;
         private System.Windows.Forms.CheckBox chcSolicitud;
+        private System.Windows.Forms.GroupBox grpDatosEmpresa;
+        private System.Windows.Forms.DateTimePicker dtpFechaTermino;
+        private System.Windows.Forms.DateTimePicker dtpFechaInicio;
+        private System.Windows.Forms.Label lblFechaTermino;
+        private System.Windows.Forms.Label lblFechaInicio;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lblTelMovAse;
+        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.Label lblAsesor;
+        private System.Windows.Forms.Label lblContacto;
+        private System.Windows.Forms.ListBox lstEmpresas;
     }
 }
 
