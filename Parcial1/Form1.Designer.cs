@@ -47,11 +47,20 @@
             this.rdbE = new System.Windows.Forms.RadioButton();
             this.grpFoto = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.grpDatosCarrera = new System.Windows.Forms.GroupBox();
+            this.lblCarrera = new System.Windows.Forms.Label();
+            this.lblSemestre = new System.Windows.Forms.Label();
+            this.lblPromedio = new System.Windows.Forms.Label();
+            this.txtPromedio = new System.Windows.Forms.TextBox();
+            this.chcServicioSocial = new System.Windows.Forms.CheckBox();
+            this.cmbCarrera = new System.Windows.Forms.ComboBox();
+            this.cmbSemestre = new System.Windows.Forms.ComboBox();
             this.grpDatosPersonales.SuspendLayout();
             this.grpGenero.SuspendLayout();
             this.grpTipo.SuspendLayout();
             this.grpFoto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.grpDatosCarrera.SuspendLayout();
             this.SuspendLayout();
             // 
             // grpDatosPersonales
@@ -241,12 +250,105 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // grpDatosCarrera
+            // 
+            this.grpDatosCarrera.Controls.Add(this.cmbSemestre);
+            this.grpDatosCarrera.Controls.Add(this.cmbCarrera);
+            this.grpDatosCarrera.Controls.Add(this.chcServicioSocial);
+            this.grpDatosCarrera.Controls.Add(this.txtPromedio);
+            this.grpDatosCarrera.Controls.Add(this.lblPromedio);
+            this.grpDatosCarrera.Controls.Add(this.lblSemestre);
+            this.grpDatosCarrera.Controls.Add(this.lblCarrera);
+            this.grpDatosCarrera.Location = new System.Drawing.Point(9, 220);
+            this.grpDatosCarrera.Name = "grpDatosCarrera";
+            this.grpDatosCarrera.Size = new System.Drawing.Size(716, 121);
+            this.grpDatosCarrera.TabIndex = 4;
+            this.grpDatosCarrera.TabStop = false;
+            this.grpDatosCarrera.Text = "Datos Carrera:";
+            // 
+            // lblCarrera
+            // 
+            this.lblCarrera.AutoSize = true;
+            this.lblCarrera.Location = new System.Drawing.Point(21, 28);
+            this.lblCarrera.Name = "lblCarrera";
+            this.lblCarrera.Size = new System.Drawing.Size(60, 17);
+            this.lblCarrera.TabIndex = 0;
+            this.lblCarrera.Text = "Carrera:";
+            // 
+            // lblSemestre
+            // 
+            this.lblSemestre.AutoSize = true;
+            this.lblSemestre.Location = new System.Drawing.Point(21, 57);
+            this.lblSemestre.Name = "lblSemestre";
+            this.lblSemestre.Size = new System.Drawing.Size(72, 17);
+            this.lblSemestre.TabIndex = 1;
+            this.lblSemestre.Text = "Semestre:";
+            // 
+            // lblPromedio
+            // 
+            this.lblPromedio.AutoSize = true;
+            this.lblPromedio.Location = new System.Drawing.Point(21, 86);
+            this.lblPromedio.Name = "lblPromedio";
+            this.lblPromedio.Size = new System.Drawing.Size(72, 17);
+            this.lblPromedio.TabIndex = 2;
+            this.lblPromedio.Text = "Promedio:";
+            // 
+            // txtPromedio
+            // 
+            this.txtPromedio.Location = new System.Drawing.Point(141, 83);
+            this.txtPromedio.Name = "txtPromedio";
+            this.txtPromedio.Size = new System.Drawing.Size(185, 22);
+            this.txtPromedio.TabIndex = 3;
+            // 
+            // chcServicioSocial
+            // 
+            this.chcServicioSocial.AutoSize = true;
+            this.chcServicioSocial.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.chcServicioSocial.Location = new System.Drawing.Point(497, 82);
+            this.chcServicioSocial.Name = "chcServicioSocial";
+            this.chcServicioSocial.Size = new System.Drawing.Size(188, 21);
+            this.chcServicioSocial.TabIndex = 4;
+            this.chcServicioSocial.Text = "Servicio Social Concluido";
+            this.chcServicioSocial.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.chcServicioSocial.UseVisualStyleBackColor = true;
+            // 
+            // cmbCarrera
+            // 
+            this.cmbCarrera.FormattingEnabled = true;
+            this.cmbCarrera.Items.AddRange(new object[] {
+            "Software",
+            "Mecatronica",
+            "Industrial",
+            "IT",
+            "Diseño Grápfico",
+            "Psicología",
+            "Derecho",
+            "Idiomas"});
+            this.cmbCarrera.Location = new System.Drawing.Point(141, 21);
+            this.cmbCarrera.Name = "cmbCarrera";
+            this.cmbCarrera.Size = new System.Drawing.Size(544, 24);
+            this.cmbCarrera.TabIndex = 5;
+            // 
+            // cmbSemestre
+            // 
+            this.cmbSemestre.FormattingEnabled = true;
+            this.cmbSemestre.Items.AddRange(new object[] {
+            "Sexto",
+            "Séptimo",
+            "Octavo",
+            "Noveno"});
+            this.cmbSemestre.Location = new System.Drawing.Point(141, 50);
+            this.cmbSemestre.Name = "cmbSemestre";
+            this.cmbSemestre.Size = new System.Drawing.Size(544, 24);
+            this.cmbSemestre.TabIndex = 6;
+            // 
             // frmAsignacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Thistle;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(748, 688);
+            this.Controls.Add(this.grpDatosCarrera);
             this.Controls.Add(this.grpFoto);
             this.Controls.Add(this.grpTipo);
             this.Controls.Add(this.grpGenero);
@@ -261,6 +363,8 @@
             this.grpTipo.PerformLayout();
             this.grpFoto.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.grpDatosCarrera.ResumeLayout(false);
+            this.grpDatosCarrera.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -286,6 +390,14 @@
         private System.Windows.Forms.RadioButton rdbN;
         private System.Windows.Forms.GroupBox grpFoto;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.GroupBox grpDatosCarrera;
+        private System.Windows.Forms.ComboBox cmbSemestre;
+        private System.Windows.Forms.ComboBox cmbCarrera;
+        private System.Windows.Forms.CheckBox chcServicioSocial;
+        private System.Windows.Forms.TextBox txtPromedio;
+        private System.Windows.Forms.Label lblPromedio;
+        private System.Windows.Forms.Label lblSemestre;
+        private System.Windows.Forms.Label lblCarrera;
     }
 }
 
