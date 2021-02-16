@@ -8,16 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LVAPV07
+namespace Parcial1
 {
-    public partial class Form1 : Form
+    public partial class frmAsignacion : Form
     {
-        public Form1()
+        public frmAsignacion()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void grpDatosPersonales_Enter(object sender, EventArgs e)
         {
 
         }

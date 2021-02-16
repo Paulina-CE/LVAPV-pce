@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace LVAPV07
 {
-    public partial class Form1 : Form
+    public partial class FrmDos : Form
     {
-        public Form1()
+        public FrmDos()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
