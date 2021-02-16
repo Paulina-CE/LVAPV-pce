@@ -55,12 +55,23 @@
             this.chcServicioSocial = new System.Windows.Forms.CheckBox();
             this.cmbCarrera = new System.Windows.Forms.ComboBox();
             this.cmbSemestre = new System.Windows.Forms.ComboBox();
+            this.grpDocumentos = new System.Windows.Forms.GroupBox();
+            this.chcSolicitud = new System.Windows.Forms.CheckBox();
+            this.chcCartaCom = new System.Windows.Forms.CheckBox();
+            this.chcCV = new System.Windows.Forms.CheckBox();
+            this.chcCartaAce = new System.Windows.Forms.CheckBox();
+            this.chcSeleccion = new System.Windows.Forms.CheckBox();
+            this.chcEntrevista = new System.Windows.Forms.CheckBox();
+            this.chcCartaLib = new System.Windows.Forms.CheckBox();
+            this.chcCartaPre = new System.Windows.Forms.CheckBox();
+            this.chcSeguro = new System.Windows.Forms.CheckBox();
             this.grpDatosPersonales.SuspendLayout();
             this.grpGenero.SuspendLayout();
             this.grpTipo.SuspendLayout();
             this.grpFoto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.grpDatosCarrera.SuspendLayout();
+            this.grpDocumentos.SuspendLayout();
             this.SuspendLayout();
             // 
             // grpDatosPersonales
@@ -342,12 +353,121 @@
             this.cmbSemestre.Size = new System.Drawing.Size(544, 24);
             this.cmbSemestre.TabIndex = 6;
             // 
+            // grpDocumentos
+            // 
+            this.grpDocumentos.Controls.Add(this.chcCartaLib);
+            this.grpDocumentos.Controls.Add(this.chcCartaPre);
+            this.grpDocumentos.Controls.Add(this.chcSeguro);
+            this.grpDocumentos.Controls.Add(this.chcCartaAce);
+            this.grpDocumentos.Controls.Add(this.chcSeleccion);
+            this.grpDocumentos.Controls.Add(this.chcEntrevista);
+            this.grpDocumentos.Controls.Add(this.chcCV);
+            this.grpDocumentos.Controls.Add(this.chcCartaCom);
+            this.grpDocumentos.Controls.Add(this.chcSolicitud);
+            this.grpDocumentos.Location = new System.Drawing.Point(9, 351);
+            this.grpDocumentos.Name = "grpDocumentos";
+            this.grpDocumentos.Size = new System.Drawing.Size(715, 158);
+            this.grpDocumentos.TabIndex = 5;
+            this.grpDocumentos.TabStop = false;
+            this.grpDocumentos.Text = "Documentos Entregados";
+            // 
+            // chcSolicitud
+            // 
+            this.chcSolicitud.AutoSize = true;
+            this.chcSolicitud.Location = new System.Drawing.Point(19, 35);
+            this.chcSolicitud.Name = "chcSolicitud";
+            this.chcSolicitud.Size = new System.Drawing.Size(235, 21);
+            this.chcSolicitud.TabIndex = 0;
+            this.chcSolicitud.Text = "Solicitud Prácticas Profesionales";
+            this.chcSolicitud.UseVisualStyleBackColor = true;
+            // 
+            // chcCartaCom
+            // 
+            this.chcCartaCom.AutoSize = true;
+            this.chcCartaCom.Location = new System.Drawing.Point(17, 72);
+            this.chcCartaCom.Name = "chcCartaCom";
+            this.chcCartaCom.Size = new System.Drawing.Size(146, 21);
+            this.chcCartaCom.TabIndex = 1;
+            this.chcCartaCom.Text = "Carta Compromiso";
+            this.chcCartaCom.UseVisualStyleBackColor = true;
+            // 
+            // chcCV
+            // 
+            this.chcCV.AutoSize = true;
+            this.chcCV.Location = new System.Drawing.Point(17, 109);
+            this.chcCV.Name = "chcCV";
+            this.chcCV.Size = new System.Drawing.Size(133, 21);
+            this.chcCV.TabIndex = 2;
+            this.chcCV.Text = "Currículum Vitae";
+            this.chcCV.UseVisualStyleBackColor = true;
+            // 
+            // chcCartaAce
+            // 
+            this.chcCartaAce.AutoSize = true;
+            this.chcCartaAce.Location = new System.Drawing.Point(273, 109);
+            this.chcCartaAce.Name = "chcCartaAce";
+            this.chcCartaAce.Size = new System.Drawing.Size(160, 21);
+            this.chcCartaAce.TabIndex = 5;
+            this.chcCartaAce.Text = "Carta De Aceptación";
+            this.chcCartaAce.UseVisualStyleBackColor = true;
+            // 
+            // chcSeleccion
+            // 
+            this.chcSeleccion.AutoSize = true;
+            this.chcSeleccion.Location = new System.Drawing.Point(273, 72);
+            this.chcSeleccion.Name = "chcSeleccion";
+            this.chcSeleccion.Size = new System.Drawing.Size(178, 21);
+            this.chcSeleccion.TabIndex = 4;
+            this.chcSeleccion.Text = "Selección de Empresas";
+            this.chcSeleccion.UseVisualStyleBackColor = true;
+            // 
+            // chcEntrevista
+            // 
+            this.chcEntrevista.AutoSize = true;
+            this.chcEntrevista.Location = new System.Drawing.Point(273, 35);
+            this.chcEntrevista.Name = "chcEntrevista";
+            this.chcEntrevista.Size = new System.Drawing.Size(212, 21);
+            this.chcEntrevista.TabIndex = 3;
+            this.chcEntrevista.Text = "Entrevista Por Competencias";
+            this.chcEntrevista.UseVisualStyleBackColor = true;
+            // 
+            // chcCartaLib
+            // 
+            this.chcCartaLib.AutoSize = true;
+            this.chcCartaLib.Location = new System.Drawing.Point(502, 109);
+            this.chcCartaLib.Name = "chcCartaLib";
+            this.chcCartaLib.Size = new System.Drawing.Size(156, 21);
+            this.chcCartaLib.TabIndex = 8;
+            this.chcCartaLib.Text = "Carta De Liberación";
+            this.chcCartaLib.UseVisualStyleBackColor = true;
+            // 
+            // chcCartaPre
+            // 
+            this.chcCartaPre.AutoSize = true;
+            this.chcCartaPre.Location = new System.Drawing.Point(502, 72);
+            this.chcCartaPre.Name = "chcCartaPre";
+            this.chcCartaPre.Size = new System.Drawing.Size(173, 21);
+            this.chcCartaPre.TabIndex = 7;
+            this.chcCartaPre.Text = "Carta De Presentación";
+            this.chcCartaPre.UseVisualStyleBackColor = true;
+            // 
+            // chcSeguro
+            // 
+            this.chcSeguro.AutoSize = true;
+            this.chcSeguro.Location = new System.Drawing.Point(502, 35);
+            this.chcSeguro.Name = "chcSeguro";
+            this.chcSeguro.Size = new System.Drawing.Size(181, 21);
+            this.chcSeguro.TabIndex = 6;
+            this.chcSeguro.Text = "Seguro Gastos Médicos";
+            this.chcSeguro.UseVisualStyleBackColor = true;
+            // 
             // frmAsignacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Thistle;
             this.ClientSize = new System.Drawing.Size(748, 688);
+            this.Controls.Add(this.grpDocumentos);
             this.Controls.Add(this.grpDatosCarrera);
             this.Controls.Add(this.grpFoto);
             this.Controls.Add(this.grpTipo);
@@ -365,6 +485,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.grpDatosCarrera.ResumeLayout(false);
             this.grpDatosCarrera.PerformLayout();
+            this.grpDocumentos.ResumeLayout(false);
+            this.grpDocumentos.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -398,6 +520,16 @@
         private System.Windows.Forms.Label lblPromedio;
         private System.Windows.Forms.Label lblSemestre;
         private System.Windows.Forms.Label lblCarrera;
+        private System.Windows.Forms.GroupBox grpDocumentos;
+        private System.Windows.Forms.CheckBox chcCartaLib;
+        private System.Windows.Forms.CheckBox chcCartaPre;
+        private System.Windows.Forms.CheckBox chcSeguro;
+        private System.Windows.Forms.CheckBox chcCartaAce;
+        private System.Windows.Forms.CheckBox chcSeleccion;
+        private System.Windows.Forms.CheckBox chcEntrevista;
+        private System.Windows.Forms.CheckBox chcCV;
+        private System.Windows.Forms.CheckBox chcCartaCom;
+        private System.Windows.Forms.CheckBox chcSolicitud;
     }
 }
 
